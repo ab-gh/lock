@@ -10,7 +10,7 @@ Requires Python 3, Discord.py 1.7.1
 
 In `lock.py`, configure `MOD_ROLE` to be the role which grants permission to use the commands, and `LOCK_CATEGORIES` with a list of the channels you want the bot to lock
 
-## Useage
+## Usage
 
 `+status` displays the channel overrides for the `@everyone` role for each channel in the server
 
