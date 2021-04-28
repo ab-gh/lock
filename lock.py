@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 from random import randint
 
 MOD_ROLE = 835836027767619584
-LOCK_CATEGORIES = [835836880334749736, 835840078475165728]
+LOCK_CATEGORIES = [835836880334749736]
 
 
 class moderation(commands.Cog):
@@ -57,6 +57,7 @@ class moderation(commands.Cog):
     async def channel_unlock(self, everyone, channel):
         await channel.set_permissions(everyone, send_messages=True, reason="Automatic channel unlocking")
 
+    
     async def has_mod(self, ctx):
         return ctx.guild.get_role(754378392647893103) in ctx.author.roles
 
